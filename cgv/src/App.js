@@ -9,10 +9,11 @@ function App() {
       <div>
          <header>
             <Header/>
-         </header>
-         <manu>
             <NavBar/>
-         </manu>
+         </header>
+         <main>
+            
+         </main>
       </div>
    );
 }

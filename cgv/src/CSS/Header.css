@@ -10,22 +10,44 @@
     .logo img{ width: 117px; height: 53px; }
     .logo span{ font-family: 'Noto Sans KR', 'CJONLYONENEW', '맑은 고딕', '돋움', sans-serif; color: lightgray;  width: 117px;}
     .contents{ display: flex; align-items:baseline; }
-    .memberInfo_box{ display: none;}
+    .button_bar{ display: none;}
   }
 
   @media screen and (max-width: 900px) {
+    .memberInfo_box{ 
+      top: -50px;
+      margin-top: -50px; 
+      width: 200px;
+      background-color: #ffffff;
+      background-color: rgba(222, 213, 213, 0.8); 
+    }
+    .sub_info img{ width: 30px; height: 30px; }
+    .sub_info li{ list-style-type: none; }
+
     .contents{display: none;}
-    .memberInfo_box{ margin: 10px;}
-    .memberInfo_box div{
+    .memberInfo_box {
+      display: none;
+    }
+    input {
+      position: fixed;
+      left: -9999px;
+    }
+    label {
+      cursor: pointer;
+    }
+    .labelBtn{ margin: 10px; }
+    .labelBtn > div{
       width: 40px;
       height: 6px;
-      color: white;
       background-color: black;
       margin: 6px 0;
-    };
-
-    .losub_memberInfo_wrapgo img{
-      width: 12px;
-      height: 12px;
+    }
+    .closeBtn{
+      margin-left: 120px;
+     border: 1px solid white;
+    }
+    #menuBtn:checked ~ .memberInfo_box {
+      display: block;
     }
   }
+
