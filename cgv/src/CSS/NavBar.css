@@ -1,0 +1,25 @@
+.nav-bar{
+    border: 1px groove white; 
+    background-color: lightgray; 
+    height: 50px;
+    width: auto;
+    display: flex;
+}
+
+.manus{
+    justify-content: center;
+    display: flex;
+}
+
+.manus li{ 
+    border-left: 10px;
+    list-style-type: none;
+    display: inline-block; 
+    margin-left: 30px; 
+    border: 1px solid black;
+    width: 100px;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    background-color: black;
+}

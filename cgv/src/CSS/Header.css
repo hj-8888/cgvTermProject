@@ -1,0 +1,31 @@
+
+  *{ margin: 0; }
+  .header_content{ margin-top: 50px; }
+
+  @media screen and (min-width: 900px) {
+    .memberInfo_wrap{ list-style-type: none; display: inline-flex; }
+    .memberInfo_wrap img{ width: 36px; height: 36px; }
+    .memberInfo_wrap li{ margin: 10px; white-space: nowrap;}
+    .logo{ margin-left: 20%;  margin-right: 10%; white-space: nowrap;}
+    .logo img{ width: 117px; height: 53px; }
+    .logo span{ font-family: 'Noto Sans KR', 'CJONLYONENEW', '맑은 고딕', '돋움', sans-serif; color: lightgray;  width: 117px;}
+    .contents{ display: flex; align-items:baseline; }
+    .memberInfo_box{ display: none;}
+  }
+
+  @media screen and (max-width: 900px) {
+    .contents{display: none;}
+    .memberInfo_box{ margin: 10px;}
+    .memberInfo_box div{
+      width: 40px;
+      height: 6px;
+      color: white;
+      background-color: black;
+      margin: 6px 0;
+    };
+
+    .losub_memberInfo_wrapgo img{
+      width: 12px;
+      height: 12px;
+    }
+  }

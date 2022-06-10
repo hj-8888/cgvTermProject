@@ -1,12 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import './CSS/Header.css';
+import './CSS/NavBar.css';
+import Header from './Component/Header.js';
+import NavBar from './Component/NavBar.js';
+import React, { useState } from "react";
 
 function App() {
-  return (
-    <div className="App">
-      <h1>HELLO react</h1>
-    </div>
-  );
+   return (
+      <div>
+         <header>
+            <Header/>
+         </header>
+         <manu>
+            <NavBar/>
+         </manu>
+      </div>
+   );
 }
 
 export default App;
