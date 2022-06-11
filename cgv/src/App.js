@@ -1,19 +1,26 @@
 import './CSS/Header.css';
 import './CSS/NavBar.css';
+import './CSS/MovieList.css';
+import './scss/owl.carousel.css';
+import './scss/owl.theme.default.css';
 import Header from './Component/Header.js';
 import NavBar from './Component/NavBar.js';
-import React, { useState } from "react";
+import MovieList from './Component/MovieList.js';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
    return (
       <div>
-         <header>
+
+         <BrowserRouter>
             <Header/>
             <NavBar/>
-         </header>
-         <main>
-            
-         </main>
+
+				<Routes>
+					<Route path="/" element={<MovieList />}></Route>
+				</Routes>
+
+			</BrowserRouter>
       </div>
    );
 }
